@@ -9,6 +9,8 @@ import SwiftUI
 struct SearchOverlayView: View {
     @Binding var isVisible: Bool
     @Binding var query: String
+    @Environment(\.dismiss) private var dismiss
+
     let currentSegment: Int
     let movies: [Movie]
     let actors: [Actor]
@@ -72,6 +74,8 @@ struct SearchOverlayView: View {
                             .foregroundColor(.blue)
                             .font(.body.bold())
                     }
+
+                    
                 }
                 .padding(.horizontal)
                 .padding(.top, 60)

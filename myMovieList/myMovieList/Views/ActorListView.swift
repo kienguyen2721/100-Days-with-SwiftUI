@@ -16,7 +16,7 @@ struct ActorListView: View {
             HStack(alignment: .top, spacing: 12) {
                 GeometryReader { geo in
                     let width = geo.size.width
-                    let height = width * (259 / 194) // Tỷ lệ 194:259
+                    let height = width * (259 / 194) //194:259
                     
                     Image(actor.imageName)
                         .resizable()
@@ -25,7 +25,7 @@ struct ActorListView: View {
                         .clipped()
                         .cornerRadius(10)
                 }
-                .frame(width: 80, height: 80 * (259 / 194)) // đảm bảo giữ tỷ lệ
+                .frame(width: 80, height: 80 * (259 / 194))
                 
                 VStack(alignment: .leading, spacing: 6) {
                     Text(actor.name)

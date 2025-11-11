@@ -4,9 +4,7 @@
 //
 //  Created by Nguyễn Trung Kiên on 6/11/25.
 //
-
 import Foundation
-
 import SwiftUI
 
 struct MovieGridView: View {
@@ -25,7 +23,7 @@ struct MovieGridView: View {
             LazyVGrid(columns: columns, spacing: 16) {
                 ForEach(movies) { movie in
                     VStack(spacing: 8) {
-                        // Ảnh với cùng chiều cao cho mọi cell
+                       
                         GeometryReader { geo in
                             let width = geo.size.width
                             let height = width * posterRatio
@@ -46,10 +44,7 @@ struct MovieGridView: View {
                                 .lineLimit(1)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.black)
-                        
-                            
-                           
-                            RatingView(rating: movie.rating)
+                        RatingView(rating: movie.rating)
                         }
                         .padding(.horizontal, 4)
                         .padding(.bottom, 8)

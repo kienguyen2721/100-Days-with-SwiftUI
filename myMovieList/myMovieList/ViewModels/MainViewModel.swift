@@ -50,7 +50,7 @@ class MainViewModel: ObservableObject {
         var lastImage: String? = nil
         
         movies = data.map { name, year, author, rating in
-            // chọn ảnh ngẫu nhiên khác với ảnh trước đó
+            
             var available = images
             if let last = lastImage {
                 available.removeAll { $0 == last }

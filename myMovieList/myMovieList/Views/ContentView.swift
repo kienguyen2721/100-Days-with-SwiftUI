@@ -4,7 +4,9 @@
 //
 //  Created by Nguyễn Trung Kiên on 5/11/25.
 //
+
 import SwiftUI
+
 
 struct ContentView: View {
     @State private var isSearchVisible = false
@@ -14,25 +16,23 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea() // 🌑 Dark mode nền
+            Color.black.ignoresSafeArea()
 
             VStack(spacing: 12) {
                 ZStack {
-                    // Picker
                     Picker("", selection: $viewModel.selectedSegment) {
                         Text("Movies").tag(0)
                         Text("Actors").tag(1)
                     }
                     .pickerStyle(SegmentedPickerStyle())
                     .frame(width: 220)
-                    .zIndex(0)
 
-                    // Nút search
                     HStack {
                         Spacer()
                         Button(action: {
                             withAnimation(.easeInOut) {
-                                viewModel.showSearch.toggle()
+                                viewModel.showSearch = true
+                                isSearchVisible = true   // ✅ hiển thị cả hai
                             }
                         }) {
                             Image(systemName: "magnifyingglass")
@@ -44,11 +44,9 @@ struct ContentView: View {
                         }
                     }
                     .padding(.horizontal)
-                    .zIndex(1)
                 }
                 .padding(.top, 8)
 
-               
                 if viewModel.selectedSegment == 0 {
                     MovieGridView(movies: viewModel.filteredMovies)
                 } else {
@@ -66,11 +64,19 @@ struct ContentView: View {
                 )
             }
         }
+        .onChange(of: isSearchVisible) { newValue in
+            if !newValue {
+                withAnimation(.easeInOut) {
+                    viewModel.showSearch = false
+                }
+            }
+        }
         .preferredColorScheme(.dark)
         .animation(.easeInOut, value: viewModel.showSearch)
     }
 }
 
-#Preview {
-    ContentView()
-}
+
+//#Preview {
+//    ContentView()
+//}
