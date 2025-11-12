@@ -27,16 +27,20 @@ struct EbayView: View {
                             .clipped()
                         
                         // View trắng chứa tên + rating
-                        VStack(spacing: 4) {
+                        VStack(alignment: .leading, spacing: 4) {
                             Text(movie.name)
                                 .font(.headline)
                                 .foregroundColor(.black)
                                 .lineLimit(1)
-                                .multilineTextAlignment(.center)
-                            
+                                .multilineTextAlignment(.leading)
+                            Text(movie.author)
+                                .foregroundColor(.gray)
+                                .lineLimit(1)
+                                .multilineTextAlignment(.leading)
 //                            RatingView(rating: movie.rating)
                         }
                         .frame(height: infoHeight)
+                        .padding(.horizontal, 8)
                         .frame(maxWidth: .infinity)
                         .background(Color.white)
                     }
