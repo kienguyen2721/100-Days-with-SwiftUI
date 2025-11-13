@@ -26,6 +26,7 @@ struct WineCardView: View {
     private var typeFontSize: CGFloat { 10 }
 
     var body: some View {
+        
         ZStack(alignment: .top) {
 
             // View trắng chạm bottom
@@ -53,17 +54,9 @@ struct WineCardView: View {
                         Spacer()
 
                         // Name + Year
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("\(item.year)")
-                                .font(.custom("Onest-Regular", size: 12))
-                                .foregroundColor(Color(hex: "#717171"))
-                            Text(item.name)
-                                .font(.custom("Onest-SemiBold", size: 12))
-                                .foregroundColor(Color(hex: "#1F1F1F"))
-                                .lineLimit(1)
-                        }
-                        .padding(.bottom, 37 + 10)
-                        .padding(.horizontal, 8)
+                        
+//                        .padding(.bottom, 37 + 10)
+//                        .padding(.horizontal, 8)
                     }
 
                     // typeImage (bottom)
@@ -89,12 +82,27 @@ struct WineCardView: View {
 //                    .background(Color.cyan)
             }
             .padding(.top, 34)
-            Image("model_wine_other")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 110, height: 138)
-                .shadow(color: .black.opacity(0.25), radius: 6, y: 4)
-                .padding(.top, 0)
+            VStack {
+                Image("model_wine_other")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 110, height: 138)
+                    .shadow(color: .black.opacity(0.25), radius: 6, y: 4)
+                    .padding(.top, 0)
+//                    .background(Color.red)
+//                Spacer()
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("\(item.year)")
+                        .font(.custom("Onest-Regular", size: 12))
+                        .foregroundColor(Color(hex: "#717171"))
+                    Text(item.name)
+                        .font(.custom("Onest-SemiBold", size: 12))
+                        .foregroundColor(Color(hex: "#1F1F1F"))
+                        .lineLimit(1)
+                }
+                
+            }
+            
 
         }
         .frame(width: 126, height: 223)
@@ -108,15 +116,19 @@ struct OtherVintagesView: View {
     var items: [VintageDetail]
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack(spacing: 16) {
-                ForEach(items) { item in
-                    WineCardView(item: item)
+        VStack {
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack(spacing: 16) {
+                    ForEach(items) { item in
+                        WineCardView(item: item)
+                    }
                 }
+                .padding(.horizontal, 16)
             }
-            .padding(.horizontal, 16)
+            .background(Color.clear)
+            Spacer()
         }
-        .background(Color.clear)
+       
     }
 }
 

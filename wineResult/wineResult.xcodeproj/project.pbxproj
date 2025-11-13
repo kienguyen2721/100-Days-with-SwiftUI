@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2872E0252EC5B82B001E9C60 /* MainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872E0242EC5B82B001E9C60 /* MainInformationView.swift */; };
+		2872E0292EC5B85C001E9C60 /* MyEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872E0282EC5B85C001E9C60 /* MyEditView.swift */; };
 		28778F432EC2DF5D00D6DF56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28778F402EC2DF5D00D6DF56 /* ContentView.swift */; };
 		28778F442EC2DF5D00D6DF56 /* wineResultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28778F412EC2DF5D00D6DF56 /* wineResultApp.swift */; };
 		28778F452EC2DF5D00D6DF56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28778F3D2EC2DF5D00D6DF56 /* Preview Assets.xcassets */; };
@@ -28,10 +30,12 @@
 		28778F6C2EC3374000D6DF56 /* Onest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28778F622EC3374000D6DF56 /* Onest-Regular.ttf */; };
 		28778F6D2EC3374000D6DF56 /* Onest-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28778F632EC3374000D6DF56 /* Onest-SemiBold.ttf */; };
 		28778F722EC4487C00D6DF56 /* SimilarProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28778F712EC4487C00D6DF56 /* SimilarProduct.swift */; };
-		28778F742EC448B100D6DF56 /* DetailSimilarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28778F732EC448B100D6DF56 /* DetailSimilarView.swift */; };
+		28778F742EC448B100D6DF56 /* OtherVintagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28778F732EC448B100D6DF56 /* OtherVintagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2872E0242EC5B82B001E9C60 /* MainInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInformationView.swift; sourceTree = "<group>"; };
+		2872E0282EC5B85C001E9C60 /* MyEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEditView.swift; sourceTree = "<group>"; };
 		28778F2C2EC2DF5100D6DF56 /* wineResult.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wineResult.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28778F3D2EC2DF5D00D6DF56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28778F3F2EC2DF5D00D6DF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +58,7 @@
 		28778F632EC3374000D6DF56 /* Onest-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Onest-SemiBold.ttf"; sourceTree = "<group>"; };
 		28778F642EC3374000D6DF56 /* Onest-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Onest-Thin.ttf"; sourceTree = "<group>"; };
 		28778F712EC4487C00D6DF56 /* SimilarProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarProduct.swift; sourceTree = "<group>"; };
-		28778F732EC448B100D6DF56 /* DetailSimilarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSimilarView.swift; sourceTree = "<group>"; };
+		28778F732EC448B100D6DF56 /* OtherVintagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVintagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2872E0232EC5B7DA001E9C60 /* MainInformationView */ = {
+			isa = PBXGroup;
+			children = (
+				2872E0262EC5B831001E9C60 /* MiniInfo */,
+				2872E0242EC5B82B001E9C60 /* MainInformationView.swift */,
+			);
+			path = MainInformationView;
+			sourceTree = "<group>";
+		};
+		2872E0262EC5B831001E9C60 /* MiniInfo */ = {
+			isa = PBXGroup;
+			children = (
+				28778F492EC2E6CE00D6DF56 /* PairView.swift */,
+				28778F4E2EC2E71000D6DF56 /* InformationView.swift */,
+				28778F502EC2E71D00D6DF56 /* ContentWineView.swift */,
+				28778F522EC32E4000D6DF56 /* EbayView.swift */,
+				28778F732EC448B100D6DF56 /* OtherVintagesView.swift */,
+			);
+			path = MiniInfo;
+			sourceTree = "<group>";
+		};
+		2872E0272EC5B854001E9C60 /* MyEditView */ = {
+			isa = PBXGroup;
+			children = (
+				2872E0282EC5B85C001E9C60 /* MyEditView.swift */,
+			);
+			path = MyEditView;
+			sourceTree = "<group>";
+		};
 		28778F232EC2DF5100D6DF56 = {
 			isa = PBXGroup;
 			children = (
@@ -109,13 +142,10 @@
 		28778F472EC2E56500D6DF56 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				28778F492EC2E6CE00D6DF56 /* PairView.swift */,
+				2872E0272EC5B854001E9C60 /* MyEditView */,
+				2872E0232EC5B7DA001E9C60 /* MainInformationView */,
 				28778F4B2EC2E6E600D6DF56 /* SegmentView.swift */,
-				28778F4E2EC2E71000D6DF56 /* InformationView.swift */,
-				28778F502EC2E71D00D6DF56 /* ContentWineView.swift */,
-				28778F522EC32E4000D6DF56 /* EbayView.swift */,
 				28778F712EC4487C00D6DF56 /* SimilarProduct.swift */,
-				28778F732EC448B100D6DF56 /* DetailSimilarView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -245,11 +275,13 @@
 			files = (
 				28778F512EC2E71D00D6DF56 /* ContentWineView.swift in Sources */,
 				28778F4F2EC2E71000D6DF56 /* InformationView.swift in Sources */,
+				2872E0292EC5B85C001E9C60 /* MyEditView.swift in Sources */,
 				28778F432EC2DF5D00D6DF56 /* ContentView.swift in Sources */,
 				28778F442EC2DF5D00D6DF56 /* wineResultApp.swift in Sources */,
 				28778F4C2EC2E6E600D6DF56 /* SegmentView.swift in Sources */,
 				28778F592EC3339E00D6DF56 /* Ebay.swift in Sources */,
-				28778F742EC448B100D6DF56 /* DetailSimilarView.swift in Sources */,
+				2872E0252EC5B82B001E9C60 /* MainInformationView.swift in Sources */,
+				28778F742EC448B100D6DF56 /* OtherVintagesView.swift in Sources */,
 				28778F4A2EC2E6CE00D6DF56 /* PairView.swift in Sources */,
 				28778F722EC4487C00D6DF56 /* SimilarProduct.swift in Sources */,
 				28778F532EC32E4000D6DF56 /* EbayView.swift in Sources */,

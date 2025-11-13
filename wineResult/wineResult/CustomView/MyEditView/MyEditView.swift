@@ -1,13 +1,14 @@
 //
-//  ContentView.swift
+//  MyEditView.swift
 //  wineResult
 //
-//  Created by Nguyễn Trung Kiên on 11/11/25.
+//  Created by Nguyễn Trung Kiên on 13/11/25.
 //
 
+import Foundation
 import SwiftUI
 
-struct ContentView: View {
+struct MyEditView: View {
     @StateObject private var viewModel = ViewModel()
     var body: some View {
         ScrollView {
@@ -25,5 +26,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MyEditView()
 }
