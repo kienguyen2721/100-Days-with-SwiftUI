@@ -157,6 +157,7 @@ struct ScreenC: View {
         .padding()
     }
 }
+
 #Preview {
     OtherCaculationView()
 }

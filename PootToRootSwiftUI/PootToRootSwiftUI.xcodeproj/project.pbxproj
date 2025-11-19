@@ -13,6 +13,9 @@
 		2872E04D2EC5B92D001E9C60 /* PootToRootSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872E0482EC5B92D001E9C60 /* PootToRootSwiftUIApp.swift */; };
 		2872E0532EC5BD26001E9C60 /* OtherCaculationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872E0522EC5BD26001E9C60 /* OtherCaculationView.swift */; };
 		2891A86C2EC5DA3700CD1CC7 /* LearnAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2891A86B2EC5DA3700CD1CC7 /* LearnAsync.swift */; };
+		2891A86E2EC6D16900CD1CC7 /* AsyncExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2891A86D2EC6D16900CD1CC7 /* AsyncExampleView.swift */; };
+		2891A8712EC6D20F00CD1CC7 /* FirstLeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2891A8702EC6D20F00CD1CC7 /* FirstLeason.swift */; };
+		2891A8732EC7104500CD1CC7 /* LearnAsyncNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2891A8722EC7104500CD1CC7 /* LearnAsyncNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		2872E0482EC5B92D001E9C60 /* PootToRootSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PootToRootSwiftUIApp.swift; sourceTree = "<group>"; };
 		2872E0522EC5BD26001E9C60 /* OtherCaculationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCaculationView.swift; sourceTree = "<group>"; };
 		2891A86B2EC5DA3700CD1CC7 /* LearnAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAsync.swift; sourceTree = "<group>"; };
+		2891A86D2EC6D16900CD1CC7 /* AsyncExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncExampleView.swift; sourceTree = "<group>"; };
+		2891A8702EC6D20F00CD1CC7 /* FirstLeason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLeason.swift; sourceTree = "<group>"; };
+		2891A8722EC7104500CD1CC7 /* LearnAsyncNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnAsyncNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +74,20 @@
 				2872E0462EC5B92D001E9C60 /* Assets.xcassets */,
 				2872E0472EC5B92D001E9C60 /* ContentView.swift */,
 				2891A86B2EC5DA3700CD1CC7 /* LearnAsync.swift */,
+				2891A86D2EC6D16900CD1CC7 /* AsyncExampleView.swift */,
 				2872E0522EC5BD26001E9C60 /* OtherCaculationView.swift */,
+				2891A86F2EC6D1E700CD1CC7 /* PraticeLeason */,
 			);
 			path = PootToRootSwiftUI;
+			sourceTree = "<group>";
+		};
+		2891A86F2EC6D1E700CD1CC7 /* PraticeLeason */ = {
+			isa = PBXGroup;
+			children = (
+				2891A8702EC6D20F00CD1CC7 /* FirstLeason.swift */,
+				2891A8722EC7104500CD1CC7 /* LearnAsyncNetwork.swift */,
+			);
+			path = PraticeLeason;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2891A8712EC6D20F00CD1CC7 /* FirstLeason.swift in Sources */,
 				2872E0532EC5BD26001E9C60 /* OtherCaculationView.swift in Sources */,
+				2891A8732EC7104500CD1CC7 /* LearnAsyncNetwork.swift in Sources */,
 				2872E04C2EC5B92D001E9C60 /* ContentView.swift in Sources */,
 				2872E04D2EC5B92D001E9C60 /* PootToRootSwiftUIApp.swift in Sources */,
+				2891A86E2EC6D16900CD1CC7 /* AsyncExampleView.swift in Sources */,
 				2891A86C2EC5DA3700CD1CC7 /* LearnAsync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
